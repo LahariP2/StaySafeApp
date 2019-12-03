@@ -17,4 +17,46 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="218dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="108dp" />
+
+        <Button
+            android:id="@+id/police"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:text="Police" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="116dp" />
+
+        <Button
+            android:id="@+id/ride"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:text="Safe Rides" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/walk"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Safe Walks" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
