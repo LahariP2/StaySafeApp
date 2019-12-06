@@ -16,9 +16,9 @@ import com.example.cs125.R;
 
 public class SlideshowFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private SlideshowViewModel slideshowViewModel;}
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+    /*public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
                 ViewModelProviders.of(this).get(SlideshowViewModel.class);
@@ -33,3 +33,5 @@ public class SlideshowFragment extends Fragment {
         return root;
     }
 }
+
+     */
