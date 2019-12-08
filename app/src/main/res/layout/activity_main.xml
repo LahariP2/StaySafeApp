@@ -8,13 +8,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <Button
-
-        android:id="@+id/police"
-        android:text="Police"
-        android:textStyle="bold"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
 
     <include
         layout="@layout/app_bar_main"
@@ -29,5 +22,7 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

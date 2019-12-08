@@ -33,9 +33,6 @@ import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button policecall;
-
-
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -64,17 +61,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-        policecall = findViewById(R.id.police);
-        policecall.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:" + 123456789));
-                startActivity(callIntent);
-            }
-
-        });
 
     }
 
