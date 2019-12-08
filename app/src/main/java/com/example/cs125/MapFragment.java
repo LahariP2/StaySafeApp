@@ -93,8 +93,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         myMap = googleMap;
-        LatLng chicago = new LatLng(41.8781, 87.6298);
-        myMap.addMarker(new MarkerOptions().position(chicago).title("Marker in Chicago"));
+        LatLng chicago = new LatLng(40.1020, -88.2272);
+        myMap.addMarker(new MarkerOptions().position(chicago).title("Marker in UIUC"));
+        LatLng lincoln = new LatLng(40.1066, -88.2282);
+        myMap.addMarker(new MarkerOptions().position(lincoln).title("Marker in Lincoln Hall"));
         myMap.moveCamera(CameraUpdateFactory.newLatLng(chicago));
 
 
