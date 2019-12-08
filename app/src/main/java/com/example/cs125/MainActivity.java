@@ -1,12 +1,21 @@
 package com.example.cs125;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.content.Intent;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -21,7 +30,11 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private Button policecall;
+
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -50,6 +63,19 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+        policecall = findViewById(R.id.police);
+        policecall.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + 123456789));
+                startActivity(callIntent);
+            }
+
+        });
+
     }
 
     @Override
