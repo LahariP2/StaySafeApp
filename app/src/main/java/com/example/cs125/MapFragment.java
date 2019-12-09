@@ -97,6 +97,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         myMap.addMarker(new MarkerOptions().position(chicago).title("Marker in UIUC"));
         LatLng lincoln = new LatLng(40.1066, -88.2282);
         myMap.addMarker(new MarkerOptions().position(lincoln).title("Marker in Lincoln Hall"));
+        LatLng siebel = new LatLng(40.1138028, -88.2249052);
+        myMap.addMarker(new MarkerOptions().position(siebel).title("Marker in Siebel"));
+        LatLng crce = new LatLng(40.104676, -88.2217576);
+        myMap.addMarker(new MarkerOptions().position(crce).title("Marker in Crce"));
+        LatLng ike = new LatLng(40.1038039, -88.2375817);
+        myMap.addMarker(new MarkerOptions().position(ike).title("Marker in Ike"));
         myMap.moveCamera(CameraUpdateFactory.newLatLng(chicago));
 
 
